@@ -58,7 +58,7 @@ public class RobotContainer {
     }
     drivetrain.registerTelemetry(logger::telemeterize);
 
-    joystick.x().toggleOnTrue(new ArmMove());
+    joystick.x().onTrue(new ArmMove());
   }
 
   public RobotContainer() {
